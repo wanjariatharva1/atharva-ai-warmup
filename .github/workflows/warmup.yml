@@ -1,0 +1,15 @@
+﻿name: Warm Render API
+
+on:
+  schedule:
+    # 10:00-19:30 IST equals 04:30-14:00 UTC.
+    - cron: "*/5 4-13 * * *"
+    - cron: "0,5,10,15,20,25,30 14 * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hit health endpoint
+        run: curl -fsS "https://atharva-ai-51gs.onrender.com/health" > /dev/null
