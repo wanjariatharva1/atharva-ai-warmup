@@ -2,9 +2,7 @@
 
 on:
   schedule:
-    # 10:00-19:30 IST equals 04:30-14:00 UTC.
-    - cron: "*/5 4-13 * * *"
-    - cron: "0,5,10,15,20,25,30 14 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
