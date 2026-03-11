@@ -6,4 +6,4 @@ Target endpoint:
 - https://atharva-ai-51gs.onrender.com/health
 
 Schedule:
-- Every 5 minutes from 10:00 AM to 7:30 PM IST
+- Every 5 minutes from 10:00 AM to 7:30 PM IST 
